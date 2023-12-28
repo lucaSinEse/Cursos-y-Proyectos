@@ -7,3 +7,5 @@ cookie cutter: dentro de la carpeta cookie_cutter se encuentran los archivos sob
 proyecto de pinguinos: dentro de la carpeta proyecto_pinguinos se encuentran los archivos sobre mi curso de transformacion y manipulacion de datos.
 
 Numpy y Pandas: dentro de la carpeta Pandas_NumPy se encuentran los archivos sobre mi curso de transformacion y manipulacion de datos.
+
+pip: dentro de la carpeta python_pip se encuentran los archivos sobre mi curso de pip3 y entornos virtuales.
