@@ -1,0 +1,1 @@
+Programacion orientada a objetos: Dentro de la carpeta POO_Python se encuentran los archivos sobre mis practivas con la programacion orientada a objetos
