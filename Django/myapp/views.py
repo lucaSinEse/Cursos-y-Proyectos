@@ -16,5 +16,5 @@ def projects(request):
     return JsonResponse(projects, safe=False)
 
 def tasks(request, title):
-    tasks = get_object_or_404(Task, id=id)
+    tasks = get_object_or_404(Task, title=title)
     return HttpResponse(f'task: {tasks.title}')
