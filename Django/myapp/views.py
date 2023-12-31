@@ -1,20 +1,21 @@
 from django.http import HttpResponse, JsonResponse
 from .models import Project, Task
-from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404, render
 # Create your views here.
 def hello(request, username):
-    return HttpResponse(f"<h1>Hello {username}</h1>")
+    return HttpResponse(f"hola, {username}")
 
 def about(request):
-    return HttpResponse('About')
+    return render(request, 'about.html')
 
 def index(request):
-    return HttpResponse("<h1>Index Page</h1>")
+    return render(request, 'index.html')
+
 
 def projects(request):
     projects = list(Project.objects.values())
-    return JsonResponse(projects, safe=False)
+    return render(request, 'projects.html')
 
-def tasks(request, title):
-    tasks = get_object_or_404(Task, title=title)
-    return HttpResponse(f'task: {tasks.title}')
+def tasks(request):
+    #tasks = get_object_or_404(Task, title=title)
+    return render(request, 'tasks.html')
