@@ -13,7 +13,7 @@ def index(request):
 
 
 def projects(request):
-    projects = list(Project.objects.values())
+    #projects = list(Project.objects.values())
     return render(request, 'projects.html')
 
 def tasks(request):
