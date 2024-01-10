@@ -1,7 +1,8 @@
 {% extends 'layouts/base.html' %}
-
+{% load static %}
 {% block content %}
 <h1>{{title}}</h1>
+<img src="{% static 'facundo.jpeg' %}" alt="" width="70">
 <h1>Welcome to Django app</h1>
 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, ratione esse quis, enim laboriosam quo nesciunt illum expedita, aperiam cum accusantium rerum! Nostrum, laboriosam provident. Nesciunt hic aliquid possimus ratione?</p>
 {% endblock %}
