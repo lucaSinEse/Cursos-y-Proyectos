@@ -43,7 +43,7 @@ def signup(request):
 
 
 def tasks(request):
-    tasks = Task.objects.filter(user=request.user)
+    tasks = Task.objects.filter(user=request.user, date_completed__isnull=True)
     return render(request, 'tasks.html',{
         'tasks' : tasks
     })
@@ -124,3 +124,9 @@ def delete_task(request, task_id):
     if request.method == 'POST':
         task.delete()
         return redirect('tasks')
+
+def tasks_completed(request):
+    tasks = Task.objects.filter(user=request.user, date_completed__isnull=False).order_by('-date_completed')
+    return render(request, 'tasks.html',{
+        'tasks' : tasks
+    })
