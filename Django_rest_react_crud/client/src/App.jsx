@@ -1,7 +1,7 @@
 import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import {TaskPage} from './pages/TaskPage';
 import {TaskFormPage} from './pages/TaskFormPages';
-import {Navigation} from './assets/components/Navigation'
+import {Navigation} from './assets/components/Navigation';
 function App(){
   return(
     <BrowserRouter>
