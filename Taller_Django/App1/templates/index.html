@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App1</title>
+    <link rel="stylesheet" href="{% static 'estilos.css' %}">
+</head>
+<body>
+    <h1> Hola Mundo </h1>
+    <br>
+    <p>espero que esten bien</p>
+    <hr>
+    <ul>
+        {% for i in objeto %}
+        <li>
+            <a href="autor/{{i.id}}">{{i.nombre}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    
+
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
