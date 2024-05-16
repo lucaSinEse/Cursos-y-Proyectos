@@ -9,7 +9,7 @@ describe('Extraer info', () => {
         browser = await puppeteer.launch({
             headless:false,
             defaultViewport:null,
-            executablePath:'/usr/bin/brave-browser',
+            //executablePath:'/usr/bin/brave-browser',
             //slowMo:250,
         });
 

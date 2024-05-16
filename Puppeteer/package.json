@@ -12,5 +12,16 @@
   "dependencies": {
     "jest": "^29.7.0",
     "puppeteer": "^22.7.1"
+  },
+  "type": "module",
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "babel-jest": "^29.7.0"
   }
 }
