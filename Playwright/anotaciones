@@ -1,0 +1,8 @@
+npx playwright codegen -> Genera una pagina de chromium y otra cosa que te genera codigo 
+
+npx playwright show-report -> muestra el reporte
+
+npx playwright test uitesting --headed -> larga los test (con vista)
+
+npx playwright test uitesting -> Larga los test (sin vista)
+
