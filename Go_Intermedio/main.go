@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"strconv"
+	"time"
 )
 
 func main() {
@@ -39,4 +40,20 @@ func main() {
 		fmt.Println(index)
 		fmt.Println(value)
 	}
+
+	c := make(chan int)
+	go doSomething(c)
+	<-c
+
+	g := 25
+	fmt.Println(g)
+	h := &g
+	fmt.Println(h)
+	fmt.Println(*h)
+}
+
+func doSomething(c chan int) {
+	time.Sleep(3 * time.Second)
+	fmt.Println("Done")
+	c <- 1
 }
